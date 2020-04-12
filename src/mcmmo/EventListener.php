@@ -84,6 +84,7 @@ class EventListener implements Listener {
                         }
                     }
                 }
+                  $ability = $this->plugin->ability[strtolower($player->getName())]["ability"];
                     //BERSERK
                     if($ability == MCPlayer::UNARMED && $item == 0) {
                         $e->setModifier($e->getFinalDamage() + 2, 2);
