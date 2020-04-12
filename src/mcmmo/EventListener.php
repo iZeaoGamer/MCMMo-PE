@@ -81,10 +81,8 @@ class EventListener implements Listener {
                             $e->setModifier($e->getFinalDamage() * $bonus, 7);
                             $player->sendMessage("§aSuccessful hit!");
                             }
-                        }
-                    }
-                }
-                  $ability = $this->plugin->ability[strtolower($player->getName())]["ability"];
+        
+           
                     //BERSERK
                     if($ability == MCPlayer::UNARMED && $item == 0) {
                         $e->setModifier($e->getFinalDamage() + 2, 2);
@@ -161,6 +159,9 @@ class EventListener implements Listener {
               }
             }
         }
+        }
+        }
+    }
 
     /*
      * @param BlockBreakEvent $e
