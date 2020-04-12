@@ -8,9 +8,9 @@
 
 namespace mcmmo;
 
-use pocketmine\scheduler\PluginTask;
+use pocketmine\scheduler\Task;
 
-class Update extends PluginTask {
+class Update extends Task {
 
     private $plugin;
 
